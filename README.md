@@ -18,9 +18,9 @@ regulatory-style backtesting (Basel Traffic Light approach).
 
 Daily equity returns are well known to exhibit:
 
-- **Heavy tails (excess kurtosis)** — extreme moves happen more often than
+- **Heavy tails (excess kurtosis)** - extreme moves happen more often than
   a Normal distribution predicts.
-- **Negative skewness** — large drawdowns are more common/severe than
+- **Negative skewness** - large drawdowns are more common/severe than
   large rallies.
 
 The Normal distribution systematically **underestimates tail risk**,
@@ -88,7 +88,7 @@ distribution re-fit every 20 trading days, to produce a time series of VaR
 estimates comparable to a production risk system. A Normal-distribution
 VaR is computed the same way as a benchmark.
 
-### 3. Backtesting — Kupiec POF Test
+### 3. Backtesting - Kupiec POF Test
 
 The Kupiec (1995) Proportion of Failures test compares the **observed
 breach rate** (returns exceeding the VaR threshold) against the
