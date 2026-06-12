@@ -1,0 +1,41 @@
+Meixner Distribution Implementation - Summary Results
+============================================================
+
+Sample size: 2000 daily returns
+Empirical mean: -0.000368
+Empirical std dev: 0.009368
+Empirical skewness: -0.4439
+Empirical excess kurtosis: 3.1672
+
+Meixner MLE Fitted Parameters:
+  alpha = 0.024524
+  beta  = -0.256845
+  delta = 0.286723
+  m     = 0.000538
+  Log-Likelihood = 6649.59
+  AIC = -13291.18
+  BIC = -13268.78
+
+Kupiec POF Test - Meixner VaR:
+  n: 1750
+  x: 25
+  expected_rate: 0.010000000000000009
+  observed_rate: 0.014285714285714285
+  lr_stat: 2.8662616817730964
+  p_value: 0.0904547543004236
+  reject_null: False
+  decision: ACCEPT: Model VaR estimates are statistically consistent with the stated confidence level.
+
+Kupiec POF Test - Normal VaR:
+  n: 1750
+  x: 37
+  expected_rate: 0.010000000000000009
+  observed_rate: 0.021142857142857144
+  lr_stat: 16.625368979863083
+  p_value: 4.553782746230528e-05
+  reject_null: True
+  decision: REJECT: Model VaR estimates are NOT statistically accurate (breach rate inconsistent with confidence level).
+
+Basel Traffic Light (last 250 days):
+  Meixner VaR: {'zone': 'Green', 'cumulative_probability': np.float64(0.7142482612060477), 'exceptions': 2}
+  Normal VaR:  {'zone': 'Green', 'cumulative_probability': np.float64(0.24188330223511711), 'exceptions': 4}
