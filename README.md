@@ -8,7 +8,7 @@ model using **Value-at-Risk (VaR)** backtests and the **Kupiec Proportion
 of Failures (POF)** test.
 
 This project was built to demonstrate practical model-validation
-techniques used in market risk and equity derivatives validation —
+techniques used in market risk and equity derivatives validation -
 distribution fitting, goodness-of-fit diagnostics, VaR estimation, and
 regulatory-style backtesting (Basel Traffic Light approach).
 
